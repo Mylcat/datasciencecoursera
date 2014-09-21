@@ -2,7 +2,7 @@
 
 getZipFileFromURL<-function(val){
   # Download the file from the internet and store in the filename getdata_projectfiles_UCI_HAR_Dataset.zip in the data folder
-  #  download.file(url = val,destfile ="data/getdata_projectfiles_UCI_HAR_Dataset.zip" )
+  download.file(url = val,destfile ="data/getdata_projectfiles_UCI_HAR_Dataset.zip" )
   setwd("E://Narayana//work//RProjects//datasciencecoursera")
   # Extract the zip file data/getdata_projectfiles_UCI_HAR_Dataset.zipinto the directory data
   unzip(zipfile = "data/getdata_projectfiles_UCI_HAR_Dataset.zip", exdir = "data")
